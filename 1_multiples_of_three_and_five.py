@@ -3,13 +3,17 @@
 
 # Find the sum of all the multiples of 3 or 5 below 1000.
 
-count = 0
-sum = 0
+def main():
+    count = 0
+    sum = 0
 
-while count < 1000:
-  if count % 5 == 0 or count % 3 == 0:
-    sum += count
+    while count < 1000:
+        if count % 5 == 0 or count % 3 == 0:
+            sum += count
+        count += 1
 
-  count += 1
+    print(sum)
 
-print sum
+
+if __name__ == "__main__":
+    main()

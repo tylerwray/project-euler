@@ -3,6 +3,9 @@
 
 # Find the largest palindrome made from the product of two 3 digit numbers.
 
+def main():
+    print(largestThreeDigitPalindrome())
+
 def isPalindrome(string):
     start = 0
     end = len(string) - 1
@@ -32,4 +35,6 @@ def largestThreeDigitPalindrome():
         first -= 1
     return largest
 
-print largestThreeDigitPalindrome()
+
+if __name__ == "__main__":
+    main()

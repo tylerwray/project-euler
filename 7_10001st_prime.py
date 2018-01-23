@@ -4,7 +4,10 @@
 
 # TODO: Speed this up! This algorithm takes about a minute to finish execution.
 
-def is_prime(number):
+def main():
+    print(find_large_prime())
+
+def is_prime(number, current):
     if number <= 1:
         return False
 
@@ -24,4 +27,6 @@ def find_large_prime():
             return number
         number += 1
 
-print find_large_prime()
+
+if __name__ == "__main__":
+    main()

@@ -2,6 +2,11 @@
 
 # What is the largest prime factor of the number 600851475143 ?
 
+
+def main():
+    number = 600851475143
+    print(largestPrimeFactor(number))
+
 def largestPrimeFactor(number):
   largest = 0
   i = 2
@@ -14,9 +19,11 @@ def largestPrimeFactor(number):
   return largest
 
 
-print largestPrimeFactor(600851475143)
+if __name__ == "__main__":
+    main()
 
-"""
+
+""" Comment out this line to run tests
 ### Tests ###
 
 if largestPrimeFactor(4) != 2:
@@ -29,4 +36,4 @@ if largestPrimeFactor(13195) != 29:
   raise AssertionError('Largest Prime Factor Failed')
 
 print 'Success!'
-"""
+#"""

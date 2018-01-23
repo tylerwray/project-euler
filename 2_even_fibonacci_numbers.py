@@ -6,17 +6,22 @@
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million,
 # find the sum of the even - valued terms.
 
-MAX = 4000000
-current = 2
-previous = 1
-sum = 0
+def main():
+    MAX = 4000000
+    current = 2
+    previous = 1
+    sum = 0
 
-while current < MAX:
-  if current % 2 == 0:
-    sum += current
+    while current < MAX:
+        if current % 2 == 0:
+            sum += current
 
-  temp = current
-  current += previous
-  previous = temp
+        temp = current
+        current += previous
+        previous = temp
 
-print sum
+        print(sum)
+
+
+if __name__ == "__main__":
+    main()

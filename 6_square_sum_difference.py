@@ -14,13 +14,16 @@
 
 import math
 
-sum_power = 0
-sum_square = 0
-for number in range(1, 101):
-  sum_power += math.pow(number, 2)
-  sum_square += number
+def main():
+    sum_power = 0
+    sum_square = 0
 
-print int(math.pow(sum_square, 2) - sum_power)
+    for number in range(1, 101):
+        sum_power += math.pow(number, 2)
+        sum_square += number
+
+    print(int(math.pow(sum_square, 2) - sum_power))
 
 
-
+if __name__ == "__main__":
+    main()
